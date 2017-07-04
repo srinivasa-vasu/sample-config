@@ -1,0 +1,10 @@
+eureka:
+  client:
+    initial-instance-info-replication-interval-seconds: 10
+    registry-fetch-interval-seconds: 10
+    fetch-registry: true
+    register-with-eureka: true
+    eureka-service-url-poll-interval-seconds: 10
+    service-url:
+      defaultZone: http://admin:admin@jhipster-registry-0.jhipster-registry.<%= kubernetesNamespace %>.svc.cluster.local:8761/eureka/,http://admin:admin@jhipster-registry-1.jhipster-registry.<%= kubernetesNamespace %>.svc.cluster.local:8761/eureka/
+    
